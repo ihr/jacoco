@@ -138,7 +138,14 @@ public final class AgentOptions {
          * Value for the {@link AgentOptions#OUTPUT} parameter: At time of data dump agent connects
          * to a MongoDB instance
          */
-        mongodb
+        mongodb,
+
+		/**
+		 * Value for the {@link AgentOptions#OUTPUT} parameter: At time of report export the
+		 * agent PUTs the report binary data to a HTTP port specified by the
+		 * {@link AgentOptions#ADDRESS} and {@link AgentOptions#PORT} attribute.
+		 */
+		httpclient
 
     }
 

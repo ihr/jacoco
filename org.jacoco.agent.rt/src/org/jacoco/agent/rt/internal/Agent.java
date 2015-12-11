@@ -149,6 +149,8 @@ public class Agent implements IAgent {
     IAgentOutput createAgentOutput() {
         final OutputMode controllerType = options.getOutput();
         switch (controllerType) {
+			case httpclient:
+                return new HttpClientOutput();
             case mongodb:
                 return new MongoDbOutput();
             case file:

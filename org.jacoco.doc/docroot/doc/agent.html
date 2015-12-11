@@ -160,11 +160,11 @@
                         attribute. Execution data is written to this TCP connection.
                     </li>
                     <li><code>none</code>: Do not produce any output.</li>
-                    <b><code>mongodb</code>: Exports data to a MongoDB instance. Here is an example which exports the
+                    <li><code>mongodb</code>: Exports data to a MongoDB instance. Here is an example which exports the
                         coverage data to a <b>localhost</b> in database <b>jacoco</b> and puts the sessionid in a
                         metadata MongoDB Document:
                         <code>-javaagent:jacoco/jacocoagent.jar=output=mongodb,destfile=mongodb://localhost/jacoco,sessionid=catalog-backend</code>
-                        </li>
+                    </li>
                 </ul>
                 Please see the security considerations below.
             </td>
